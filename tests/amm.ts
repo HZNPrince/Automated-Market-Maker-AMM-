@@ -52,7 +52,6 @@ describe("amm", () => {
   }
 
   before("Tokens and Funds setup", async () => {
-    // Todo
     // Create Mint accounts
     solMint = await createMint(connection, user, user.publicKey, null, 6)
     console.log("SOL Mint Account Created: ", solMint)
@@ -98,7 +97,6 @@ describe("amm", () => {
   })
 
   it("Initialize Pool", async () => {
-    // Add your test here. Todo
     const initialLiquiditySOL = new anchor.BN(1000 * 10 ** 6)
     const initialLiquidityUSDC = new anchor.BN(5000 * 10 ** 6)
 
@@ -190,6 +188,7 @@ describe("amm", () => {
     const lpTokenMinted = await getAccount(connection, userLpAccount)
     console.log("LP Tokens minted to user : ", lpTokenMinted.amount)
 
+    // Call Method
     const removeLiquidityTx = await program.methods
       .removeLiquidity(new anchor.BN(lpTokenMinted.amount), new anchor.BN(1), new anchor.BN(1))
       .accounts({
