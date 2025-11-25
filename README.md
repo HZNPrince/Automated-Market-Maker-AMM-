@@ -97,12 +97,6 @@ Building this taught me the fundamentals of DeFi and blockchain development:
 
 This project taught me not just _how_ to build an AMM, but _why_ DeFi works the way it does.
 
-## 🎯 Next Steps
-
-- Frontend dapp (Vite + React)
-- Multi-wallet support
-- Pool analytics
-
 ---
 
 **Built with:** [Anchor](https://anchor-lang.com) | [Solana](https://solana.com)
